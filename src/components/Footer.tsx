@@ -5,17 +5,17 @@ import "./../assets/scss/App.scss";
 
 export const Footer = (): ReactElement => {
   return (
-    <footer className="footer">
+    <footer className="newsletter">
       <div className="content has-text-centered">
         <h3>Keep in touch with us.</h3>
-        <h4 style={{paddingBottom: 10}}>
+        <h4 style={{ paddingBottom: 10 }}>
           Sign up to our emails for news, competitions and exclusive discounts.
         </h4>
         <div className="sign-up">
           <div className="columns is-multiline has-text-centered is-centered">
             <div className="">
               <input
-                className="input footer-input"
+                className="input newsletter-input"
                 placeholder="Your name"
                 style={{ marginRight: 5 }}
                 type="text"
@@ -23,7 +23,7 @@ export const Footer = (): ReactElement => {
             </div>
             <div className="">
               <input
-                className="input footer-input"
+                className="input newsletter-input"
                 placeholder="Your email"
                 style={{ marginRight: 5 }}
                 type="text"

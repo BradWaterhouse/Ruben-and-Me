@@ -15,7 +15,7 @@ export const TopBar = (): ReactElement => {
         <nav className="navbar is-transparent is-hidden-tablet">
           <div className="navbar-brand">
             <Link className="navbar-item" to="/">
-              <h1>TITLE</h1>
+              <h1>RUBEN & ME</h1>
             </Link>
             <a
               role="button"
