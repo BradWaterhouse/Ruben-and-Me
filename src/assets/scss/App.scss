@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+@import "~bulma/sass/utilities/_all.sass";
+@import "~bulma/sass/base/_all.sass";
+@import "~bulma/sass/helpers/visibility";
+@import "~bulma/sass/helpers/typography";
+@import "~bulma/sass/elements/container";
+@import "~bulma/sass/elements/button";
+@import "~bulma/sass/grid/columns.sass";
+@import "~bulma/sass/layout/hero.sass";
+@import "~bulma/sass/components/navbar";
+@import "~bulma/sass/elements/title";
+@import "~bulma/sass/elements/content";
+@import "~bulma/sass/elements/image";
+@import "~bulma/sass/form/all";
+@import "spinner";
+
+.main-content {
+  margin: 1em 1em 0;
+}
+
+.hero {
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+
+  .hero-foot {
+    height: 50px;
+    background: white;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+
+    .hero-foot--wrapper {
+      margin: 7px auto;
+      height: 50px;
+
+      .hero-menu-desktop {
+        line-height: 38px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 1rem;
+
+        a {
+          color: $grey-darker;
+
+          :hover {
+            color: $blue;
+            transition: all 0.2s ease-in-out;
+            border-bottom: 2px solid $black-ter;
+          }
+        }
+
+        ul li {
+          display: inline-block;
+          padding-right: 15px;
+          padding-left: 15px;
+
+          .is-active a {
+            border-bottom: 2px solid $black-ter;
+          }
+        }
+      }
+    }
+  }
+}
