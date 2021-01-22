@@ -13,6 +13,28 @@ const Home = (): ReactElement => {
         <meta name="description" content="" />
       </Helmet>
 
+      <hr />
+      <div
+        className="columns is-10 is-multiline has-text-centered is-centered"
+        style={{ marginTop: 20 }}
+      >
+        <div className="column">
+          <h2 className="subtitle mt-2">Free Personalisation.</h2>
+          <small>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry
+          </small>
+        </div>
+        <div className="column">
+          <h2 className="subtitle mt-2">Free Delivery.</h2>
+          <small>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry
+          </small>
+        </div>
+      </div>
+      <hr />
+
       <header className="masthead">
         <div className="top-padding">
           <div className="columns is-multiline has-text-centered">
@@ -27,19 +49,7 @@ const Home = (): ReactElement => {
       <main className="main-content">
         <div className="container mb-5">
           <hr />
-          <h3 className="title mt-2">Our Story.</h3>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry standard dummy text ever
-            since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only
-            five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-          </p>
-          <hr />
+
           <h3 className="title mt-2">Shop by category.</h3>
           <hr />
 
@@ -166,6 +176,21 @@ const Home = (): ReactElement => {
               </div>
             </div>
           </div>
+          <hr />
+
+          <h3 className="title mt-2">Our Story.</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only
+            five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+          <hr />
         </div>
       </main>
     </>
