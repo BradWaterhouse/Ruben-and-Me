@@ -69,7 +69,6 @@
 
 h3 {
   font-family: Avenir;
-  letter-spacing: 3px;
 }
 
 h2 {
@@ -77,6 +76,16 @@ h2 {
   letter-spacing: 3px;
 }
 
-.navbar-item {
+h4 {
   font-family: Avenir;
+}
+
+.footer {
+  margin-top: 50px;
+  padding: 32px;
+  background: #dedede;
+}
+
+.footer-input {
+  width: 400px;
 }

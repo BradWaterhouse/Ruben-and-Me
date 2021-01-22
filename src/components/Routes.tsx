@@ -4,6 +4,7 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import { Spinner } from "./Spinner";
 import { TopBar } from "./TopBar";
 import "./../assets/scss/App.scss";
+import {Footer} from "./Footer";
 
 const Home = React.lazy(
   (): Promise<any> => import(/* webpackChunkName: "home" */ "./Home")
@@ -31,6 +32,7 @@ const Routes = (): Router => {
           <Route component={PageNotFound} />
         </Switch>
       </React.Suspense>
+      <Footer />
     </Router>
   );
 };
