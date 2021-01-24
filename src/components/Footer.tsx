@@ -32,6 +32,7 @@ export const Footer = (): ReactElement => {
           </div>
           <button className="button">Submit</button>
         </div>
+        <hr />
         <div className="copyright" style={{ marginTop: 20 }}>
           <p>
             <strong>Ruben & Me</strong> created by{" "}
