@@ -59,13 +59,50 @@ export const TopBar = (): ReactElement => {
         <div className="hero-foot is-hidden-mobile">
           <div className="hero-foot--wrapper">
             <div className="columns">
-              <div className="column is-12 hero-menu-desktop">
+              <div className="column is-12 hero-menu-desktop has-text-centered">
                 <ul>
                   <li>
-                    <Link to="/">Home</Link>
+                    <h4 className="subtitle">Ruben & Me.</h4>
                   </li>
                   <li>
-                    <Link to="/contact">Contact</Link>
+                    <h4>
+                      <Link to="/">Home</Link>
+                    </h4>
+                  </li>
+                  <li>
+                    <h4>
+                      <Link to="/">New In</Link>
+                    </h4>
+                  </li>
+                  <li>
+                    <h4>
+                      <Link to="/">Clothing</Link>
+                    </h4>
+                  </li>
+                  <li>
+                    <h4>
+                      <Link to="/">Accessories</Link>
+                    </h4>
+                  </li>
+                  <li>
+                    <h4>
+                      <Link to="/">Toys & Books</Link>
+                    </h4>
+                  </li>
+                  <li>
+                    <h4>
+                      <Link to="/">Gift Sets</Link>
+                    </h4>
+                  </li>
+                  <li>
+                    <h4>
+                      <Link to="/">Wax Melts</Link>
+                    </h4>
+                  </li>
+                  <li className="is-grouped-right">
+                    <h4>
+                      <Link to="/contact">Contact</Link>
+                    </h4>
                   </li>
                 </ul>
               </div>
