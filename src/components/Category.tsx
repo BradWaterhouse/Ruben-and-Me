@@ -26,6 +26,17 @@ const Category = (): ReactElement => {
           <hr />
 
           <div className="columns is-multiline has-text-centered">
+
+            <div className="sort field is-pulled-right" style={{marginTop: 10}}>
+              <span>Sort by: </span>
+              <select aria-label="Sort by">
+                <option value="weight">Bestsellers</option>
+                <option value="pricedesc">Price (Desc)</option>
+                <option value="priceasc">Price (Asc)</option>
+                <option value="nameasc">Name: A to Z</option>
+                <option value="namedesc">Name: Z to A</option>
+              </select>
+            </div>
             <div className="column is-12">
               <div className="columns is-multiline is-mobile">
                 <GridProduct
