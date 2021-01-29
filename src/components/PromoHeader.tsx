@@ -5,7 +5,7 @@ const PromoHeader = (): ReactElement => {
     <>
       <div className="container mb-5">
         <div
-          className="columns is-10 has-text-centered is-centered is-mobile"
+          className="columns is-gapless is-10 has-text-centered is-centered is-mobile"
           style={{ marginTop: 20 }}
         >
           <div
@@ -22,6 +22,7 @@ const PromoHeader = (): ReactElement => {
             <small className="is-hidden-desktop is-hidden-tablet">
               Across all items.
             </small>
+            <hr />
           </div>
           <div
             className="column has-text-centered"
@@ -37,9 +38,9 @@ const PromoHeader = (): ReactElement => {
             <small className="is-hidden-desktop is-hidden-tablet">
               On orders over £32.
             </small>
+            <hr />
           </div>
         </div>
-        <hr />
       </div>
     </>
   );

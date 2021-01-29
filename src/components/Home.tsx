@@ -16,7 +16,7 @@ const Home = (): ReactElement => {
 
       <header className="masthead">
         <div className="top-padding">
-          <div className="columns is-multiline has-text-centered is-centered">
+          <div className="columns is-gapless is-multiline has-text-centered is-centered">
             <div className="column is-3">
               <h2 className="title">Reuben & Me.</h2>
               <h3 className="subtitle">personalisation done personally.</h3>
@@ -57,7 +57,7 @@ const Home = (): ReactElement => {
           <h3 className="title mt-2 has-text-centered">Shop by category.</h3>
           {/*<hr />*/}
 
-          <div className="columns is-multiline has-text-centered">
+          <div className="columns is-multiline has-text-centered is-gapless">
             <div className="column is-12">
               <div className="columns is-multiline is-mobile">
                 <div className="column is-one-fifth-desktop is-12-mobile">
