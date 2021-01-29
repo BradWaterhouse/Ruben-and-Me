@@ -4,7 +4,6 @@ const PromoHeader = (): ReactElement => {
   return (
     <>
       <div className="container mb-5">
-        <hr />
         <div
           className="columns is-10 has-text-centered is-centered is-mobile"
           style={{ marginTop: 20 }}

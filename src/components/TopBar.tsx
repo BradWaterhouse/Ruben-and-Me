@@ -71,32 +71,22 @@ export const TopBar = (): ReactElement => {
                   </li>
                   <li>
                     <h4>
-                      <Link to="/">New In</Link>
+                      <Link to="/category/new-in">New In</Link>
                     </h4>
                   </li>
                   <li>
                     <h4>
-                      <Link to="/">Clothing</Link>
+                      <Link to="/category/clothing">Clothing</Link>
                     </h4>
                   </li>
                   <li>
                     <h4>
-                      <Link to="/">Accessories</Link>
+                      <Link to="category/accessories">Accessories</Link>
                     </h4>
                   </li>
                   <li>
                     <h4>
-                      <Link to="/">Toys & Books</Link>
-                    </h4>
-                  </li>
-                  <li>
-                    <h4>
-                      <Link to="/">Gift Sets</Link>
-                    </h4>
-                  </li>
-                  <li>
-                    <h4>
-                      <Link to="/">Wax Melts</Link>
+                      <Link to="category/wax-melts">Wax Melts</Link>
                     </h4>
                   </li>
                   <li className="is-grouped-right">

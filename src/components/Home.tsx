@@ -18,7 +18,7 @@ const Home = (): ReactElement => {
         <div className="top-padding">
           <div className="columns is-multiline has-text-centered is-centered">
             <div className="column is-3">
-              <h2 className="title">Ruben & Me.</h2>
+              <h2 className="title">Reuben & Me.</h2>
               <h3 className="subtitle">personalisation done personally.</h3>
             </div>
           </div>
@@ -54,9 +54,8 @@ const Home = (): ReactElement => {
           </div>
 
           <hr />
-
           <h3 className="title mt-2 has-text-centered">Shop by category.</h3>
-          <hr />
+          {/*<hr />*/}
 
           <div className="columns is-multiline has-text-centered">
             <div className="column is-12">
@@ -116,13 +115,6 @@ const Home = (): ReactElement => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="columns is-multiline has-text-centered">
-            <div className="column is-12">
-              <div className="columns is-multiline is-mobile">
                 <div className="column is-one-fifth-desktop is-12-mobile">
                   <div className="card">
                     <img
@@ -181,10 +173,11 @@ const Home = (): ReactElement => {
               </div>
             </div>
           </div>
+
           <hr />
 
           <h3 className="title mt-2 has-text-centered">Our Story.</h3>
-          <p>
+          <p className="has-text-centered">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry standard dummy text ever
             since the 1500s, when an unknown printer took a galley of type and
