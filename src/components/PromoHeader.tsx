@@ -12,6 +12,7 @@ const PromoHeader = (): ReactElement => {
             className="column has-text-centered"
             style={{ marginLeft: 10, marginRight: 10 }}
           >
+            <hr style={{ marginTop: 2 }} />
             <h3 className="subtitle mt-2">
               <b>Free</b> Gift Box.
             </h3>
@@ -28,6 +29,7 @@ const PromoHeader = (): ReactElement => {
             className="column has-text-centered"
             style={{ marginLeft: 10, marginRight: 10 }}
           >
+            <hr style={{ marginTop: 2 }} />
             <h3 className="subtitle mt-2">
               <b>Free</b> Delivery.
             </h3>

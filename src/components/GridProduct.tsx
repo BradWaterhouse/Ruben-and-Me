@@ -2,7 +2,7 @@ import React, { ReactElement } from "react";
 
 interface Props {
   image: string;
-  price: string:
+  price: string;
 }
 
 interface State {}
