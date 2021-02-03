@@ -15,7 +15,7 @@ export const TopBar = (): ReactElement => {
         <nav className="navbar is-transparent is-hidden-tablet">
           <div className="navbar-brand">
             <Link className="navbar-item" to="/">
-              <h1>RUBEN & ME</h1>
+              <h1>REUBEN & ME</h1>
             </Link>
             <a
               role="button"
@@ -62,7 +62,7 @@ export const TopBar = (): ReactElement => {
               <div className="column is-12 hero-menu-desktop has-text-centered">
                 <ul>
                   <li>
-                    <h4 className="subtitle">Ruben & Me.</h4>
+                    <h4 className="subtitle">Reuben & Me.</h4>
                   </li>
                   <li>
                     <h4>
