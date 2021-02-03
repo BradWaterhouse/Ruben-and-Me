@@ -20,6 +20,7 @@ const PageNotFound = (): ReactElement => {
           <div className="columns is-multiline">
             <div className="column is-12 has-text-centered">
               <h2 className="title">Page Not Found</h2>
+              <p>Sorry, this page does not exist.</p>
             </div>
           </div>
         </div>

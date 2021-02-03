@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import GridProduct from "./GridProduct";
 
@@ -7,6 +7,17 @@ interface Props {}
 interface State {}
 
 const Category = (): ReactElement => {
+  const [url, setUrl] = useState<string>("");
+
+  useEffect(() => {
+    getURL();
+  });
+
+  const getURL = (): void => {
+    const fullUrl = window.location.href;
+    setUrl(fullUrl.substring(fullUrl.lastIndexOf("/") + 1));
+  };
+
   return (
     <>
       <Helmet>
@@ -17,7 +28,7 @@ const Category = (): ReactElement => {
       <main className="main-content">
         <div className="container mb-5">
           <h2 className="title mt-2 has-text-centered">
-            Personalised Children's Clothes.
+            {url + "."}
           </h2>
           <p className="has-text-centered">
             Lorem Ipsum is simply dummy text of the printing and typesetting

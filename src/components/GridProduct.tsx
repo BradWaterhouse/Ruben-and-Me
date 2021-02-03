@@ -20,7 +20,7 @@ const GridProduct = (props: Props): ReactElement => {
             className="button"
             style={{ marginTop: 10, backgroundColor: "#faefdf" }}
           >
-            Shop Now on Etsy
+            Shop now on Etsy
           </button>
         </div>
       </div>

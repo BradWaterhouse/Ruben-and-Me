@@ -104,30 +104,6 @@ const Contact = (): ReactElement => {
           />
         </div>
       </div>
-      <p className="label">Preferred contact method</p>
-      <div className="field">
-        <div className="control">
-          <label className="radio">
-            <input
-              type="radio"
-              name="preferredMethod"
-              value="email"
-              disabled={loading}
-              defaultChecked
-            />{" "}
-            Email
-          </label>
-          <label className="radio">
-            <input
-              type="radio"
-              name="preferredMethod"
-              value="phone"
-              disabled={loading}
-            />{" "}
-            Telephone
-          </label>
-        </div>
-      </div>
       {error === "" ? null : (
         <div className="notification is-danger">{error}</div>
       )}
