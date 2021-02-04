@@ -45,6 +45,42 @@ export const TopBar = (): ReactElement => {
                 </div>
                 <div className="navbar-item">
                   <Link
+                    to="category/new-in"
+                    className="navbar-item"
+                    onClick={(): void => toggleMenu(false)}
+                  >
+                    New In
+                  </Link>
+                </div>
+                <div className="navbar-item">
+                  <Link
+                    to="category/clothing"
+                    className="navbar-item"
+                    onClick={(): void => toggleMenu(false)}
+                  >
+                    Clothing
+                  </Link>
+                </div>
+                <div className="navbar-item">
+                  <Link
+                    to="category/accessories"
+                    className="navbar-item"
+                    onClick={(): void => toggleMenu(false)}
+                  >
+                    Accessories
+                  </Link>
+                </div>
+                <div className="navbar-item">
+                  <Link
+                    to="category/wax-melts"
+                    className="navbar-item"
+                    onClick={(): void => toggleMenu(false)}
+                  >
+                    Wax Melts
+                  </Link>
+                </div>
+                <div className="navbar-item">
+                  <Link
                     to="/contact"
                     className="navbar-item"
                     onClick={(): void => toggleMenu(false)}

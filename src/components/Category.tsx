@@ -1,4 +1,4 @@
-import React, { ReactElement, useEffect, useState } from "react";
+import React, { ChangeEvent, ReactElement, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import GridProduct from "./GridProduct";
 //@ts-ignore
@@ -8,8 +8,9 @@ import { useLocation } from "react-router-dom";
 interface Product {
   id: number;
   name: string;
-  price: string;
+  price: number;
   image: string;
+  sortingOrder: number;
   categories: Array<string>;
 }
 
@@ -17,6 +18,7 @@ const Category = (): ReactElement => {
   const location = useLocation();
   const [categoryName, setCategoryName] = useState<string>("");
   const [products, setProducts] = useState([]);
+  const [sortingOrder, setSortingOrder] = useState<string>("nameasc");
 
   useEffect((): void => {
     setProducts([]);
@@ -37,6 +39,25 @@ const Category = (): ReactElement => {
         setProducts((products: Product[]) => [...products, product]);
       }
     });
+  };
+
+  const handleDropdownChange = (event: ChangeEvent): void => {
+    setSortingOrder((event.target as HTMLSelectElement).value);
+  };
+
+  const getSorting = (product, nextProduct): number => {
+    switch (sortingOrder) {
+      case "pricedesc":
+        return parseInt(nextProduct.price) - parseInt(product.price);
+      case "priceasc":
+        return parseInt(product.price) - parseInt(nextProduct.price);
+      case "nameasc":
+        return product.name.localeCompare(nextProduct.name);
+      case "namedesc":
+        return nextProduct.name.localeCompare(product.name);
+      default:
+        return nextProduct.sortingOrder - product.sortingOrder;
+    }
   };
 
   return (
@@ -62,7 +83,7 @@ const Category = (): ReactElement => {
                 style={{ marginTop: 10 }}
               >
                 <span>Sort by: </span>
-                <select aria-label="Sort by">
+                <select aria-label="Sort by" onChange={handleDropdownChange}>
                   <option value="weight">Bestsellers</option>
                   <option value="pricedesc">Price (Desc)</option>
                   <option value="priceasc">Price (Asc)</option>
@@ -74,7 +95,7 @@ const Category = (): ReactElement => {
 
             <div className="column is-12">
               <div className="columns is-multiline is-mobile">
-                {products.map((product: Product) => {
+                {products.sort(getSorting).map((product: Product) => {
                   return (
                     <GridProduct
                       key={product.id}

@@ -2,7 +2,7 @@ import React, { ReactElement } from "react";
 
 interface Props {
   image: string;
-  price: string;
+  price: number;
   name: string;
 }
 
@@ -15,7 +15,7 @@ const GridProduct = (props: Props): ReactElement => {
         <img src={props.image} alt="Alps" />
         <div className="w3-container w3-center">
           <h3>{props.name}</h3>
-          <b>{props.price}</b>
+          <b>£{props.price}</b>
           <br />
           <button
             className="button"

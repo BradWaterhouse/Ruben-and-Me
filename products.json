@@ -2,65 +2,74 @@
   "all": [
     {
       "id": 1,
-      "name": "product 1",
-      "price": "£27.00",
+      "name": "a wax melt product",
+      "price": 27.00,
       "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/ESoftToys.jpg",
+      "sortingOrder": 1,
       "categories": ["wax-melts"]
     },
     {
       "id": 2,
-      "name": "product 2",
-      "price": "£23.00",
+      "name": "b wax melt product",
+      "price": 23.00,
       "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/ESoftToys.jpg",
+      "sortingOrder": 1,
       "categories": ["wax-melts"]
     },
     {
       "id": 3,
-      "name": "product 3",
-      "price": "£22.00",
+      "name": "c wax melt product",
+      "price": 22.00,
       "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/ESoftToys.jpg",
+      "sortingOrder": 1,
       "categories": ["wax-melts"]
     },
     {
       "id": 4,
-      "name": "product 4",
-      "price": "£21.00",
+      "name": "d wax melt product",
+      "price": 21.00,
       "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/ESoftToys.jpg",
+      "sortingOrder": 1,
       "categories": ["wax-melts"]
     },
     {
       "id": 5,
       "name": "product 5",
-      "price": "£22.00",
+      "price": 22.00,
       "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/20_01_21_Homepage_Tile_Category_Block_Robes.jpg",
+      "sortingOrder": 1,
       "categories": ["clothing"]
     },
     {
       "id": 6,
       "name": "product 6",
-      "price": "£21.00",
+      "price": 21.00,
       "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/20_01_21_Homepage_Tile_Category_Block_Robes.jpg",
+      "sortingOrder": 1,
       "categories": ["clothing"]
     },
     {
       "id": 7,
       "name": "product 5",
-      "price": "£22.00",
+      "price": 22.00,
       "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/EBackpacks.jpg",
+      "sortingOrder": 1,
       "categories": ["accessories"]
     },
     {
       "id": 8,
       "name": "product 6",
-      "price": "£21.00",
+      "price": 21.00,
       "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/EBackpacks.jpg",
+      "sortingOrder": 1,
       "categories": ["accessories"]
     },
     {
       "id": 9,
       "name": "product 5",
-      "price": "£22.00",
+      "price": 22.00,
       "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/EBackpacks.jpg",
+      "sortingOrder": 1,
       "categories": ["accessories"]
     }
   ]
