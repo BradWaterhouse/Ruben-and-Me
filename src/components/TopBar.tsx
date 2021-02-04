@@ -45,7 +45,7 @@ export const TopBar = (): ReactElement => {
                 </div>
                 <div className="navbar-item">
                   <Link
-                    to="category/new-in"
+                    to="/category/new-in"
                     className="navbar-item"
                     onClick={(): void => toggleMenu(false)}
                   >
@@ -54,7 +54,7 @@ export const TopBar = (): ReactElement => {
                 </div>
                 <div className="navbar-item">
                   <Link
-                    to="category/clothing"
+                    to="/category/clothing"
                     className="navbar-item"
                     onClick={(): void => toggleMenu(false)}
                   >
@@ -63,7 +63,7 @@ export const TopBar = (): ReactElement => {
                 </div>
                 <div className="navbar-item">
                   <Link
-                    to="category/accessories"
+                    to="/category/accessories"
                     className="navbar-item"
                     onClick={(): void => toggleMenu(false)}
                   >
@@ -72,7 +72,7 @@ export const TopBar = (): ReactElement => {
                 </div>
                 <div className="navbar-item">
                   <Link
-                    to="category/wax-melts"
+                    to="/category/wax-melts"
                     className="navbar-item"
                     onClick={(): void => toggleMenu(false)}
                   >
