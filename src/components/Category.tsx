@@ -1,21 +1,42 @@
 import React, { ReactElement, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import GridProduct from "./GridProduct";
+//@ts-ignore
+import Products from "./../../products.json";
+import { useLocation } from "react-router-dom";
 
-interface Props {}
-
-interface State {}
+interface Product {
+  id: number;
+  name: string;
+  price: string;
+  image: string;
+  categories: Array<string>;
+}
 
 const Category = (): ReactElement => {
-  const [url, setUrl] = useState<string>("");
+  const location = useLocation();
+  const [categoryName, setCategoryName] = useState<string>("");
+  const [products, setProducts] = useState([]);
 
-  useEffect(() => {
+  useEffect((): void => {
+    setProducts([]);
     getURL();
-  });
+    getProductsForCategory();
+  }, [location, categoryName]);
 
   const getURL = (): void => {
-    const fullUrl = window.location.href;
-    setUrl(fullUrl.substring(fullUrl.lastIndexOf("/") + 1));
+    const fullUrl = location.pathname;
+    setCategoryName(fullUrl.substring(fullUrl.lastIndexOf("/") + 1));
+  };
+
+  const getProductsForCategory = (): void => {
+    const jsonProductList: Product[] = Products.all;
+
+    jsonProductList.map((product: Product) => {
+      if (product.categories.includes(categoryName)) {
+        setProducts((products: Product[]) => [...products, product]);
+      }
+    });
   };
 
   return (
@@ -27,12 +48,10 @@ const Category = (): ReactElement => {
 
       <main className="main-content">
         <div className="container mb-5">
-          <h2 className="title mt-2 has-text-centered">
-            {url + "."}
-          </h2>
+          <h2 className="title mt-2 has-text-centered">{categoryName + "."}</h2>
           <p className="has-text-centered">
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text.
+            industry. Lorem Ipsum has been the standard dummy text.
           </p>
           <hr />
 
@@ -55,56 +74,16 @@ const Category = (): ReactElement => {
 
             <div className="column is-12">
               <div className="columns is-multiline is-mobile">
-                <GridProduct
-                  image="https://cdn.my1styears.com/media/wysiwyg/home/grid/ESoftToys.jpg"
-                  price="14.00"
-                />
-                <GridProduct
-                  image="https://cdn.my1styears.com/media/wysiwyg/home/grid/20_01_21_Homepage_Tile_Category_Block_Robes.jpg"
-                  price="17.00"
-                />
-                <GridProduct
-                  image="https://cdn.my1styears.com/media/wysiwyg/home/grid/EBackpacks.jpg"
-                  price="17.00"
-                />
-                <GridProduct
-                  image="https://cdn.my1styears.com/media/wysiwyg/home/grid/ENewIn.jpg"
-                  price="16.00"
-                />
-
-                <GridProduct
-                  image="https://cdn.my1styears.com/media/wysiwyg/home/grid/20_01_21_Homepage_Tile_Category_Block_Robes.jpg"
-                  price="17.00"
-                />
-                <GridProduct
-                  image="https://cdn.my1styears.com/media/wysiwyg/home/grid/ESoftToys.jpg"
-                  price="14.00"
-                />
-                <GridProduct
-                  image="https://cdn.my1styears.com/media/wysiwyg/home/grid/ENewIn.jpg"
-                  price="16.00"
-                />
-                <GridProduct
-                  image="https://cdn.my1styears.com/media/wysiwyg/home/grid/EBackpacks.jpg"
-                  price="12.00"
-                />
-
-                <GridProduct
-                  image="https://cdn.my1styears.com/media/wysiwyg/home/grid/ESoftToys.jpg"
-                  price="14.00"
-                />
-                <GridProduct
-                  image="https://cdn.my1styears.com/media/wysiwyg/home/grid/20_01_21_Homepage_Tile_Category_Block_Robes.jpg"
-                  price="17.00"
-                />
-                <GridProduct
-                  image="https://cdn.my1styears.com/media/wysiwyg/home/grid/EBackpacks.jpg"
-                  price="12.00"
-                />
-                <GridProduct
-                  image="https://cdn.my1styears.com/media/wysiwyg/home/grid/ENewIn.jpg"
-                  price="16.00"
-                />
+                {products.map((product: Product) => {
+                  return (
+                    <GridProduct
+                      key={product.id}
+                      image={product.image}
+                      price={product.price}
+                      name={product.name}
+                    />
+                  );
+                })}
               </div>
             </div>
           </div>

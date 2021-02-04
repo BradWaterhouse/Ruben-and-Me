@@ -81,12 +81,12 @@ export const TopBar = (): ReactElement => {
                   </li>
                   <li>
                     <h4>
-                      <Link to="category/accessories">Accessories</Link>
+                      <Link to="/category/accessories">Accessories</Link>
                     </h4>
                   </li>
                   <li>
                     <h4>
-                      <Link to="category/wax-melts">Wax Melts</Link>
+                      <Link to="/category/wax-melts">Wax Melts</Link>
                     </h4>
                   </li>
                   <li className="is-grouped-right">

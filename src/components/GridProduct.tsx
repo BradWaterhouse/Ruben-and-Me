@@ -3,6 +3,7 @@ import React, { ReactElement } from "react";
 interface Props {
   image: string;
   price: string;
+  name: string;
 }
 
 interface State {}
@@ -13,8 +14,8 @@ const GridProduct = (props: Props): ReactElement => {
       <div className="card">
         <img src={props.image} alt="Alps" />
         <div className="w3-container w3-center">
-          <h3>Some Product Title</h3>
-          <b>£{props.price}</b>
+          <h3>{props.name}</h3>
+          <b>{props.price}</b>
           <br />
           <button
             className="button"

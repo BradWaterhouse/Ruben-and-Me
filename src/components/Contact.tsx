@@ -118,7 +118,7 @@ const Contact = (): ReactElement => {
   return (
     <>
       <Helmet>
-        <title>Contact | TITLE</title>
+        <title>Reuben & Me | Contact</title>
         <meta name="description" content="Contact" />
       </Helmet>
 
