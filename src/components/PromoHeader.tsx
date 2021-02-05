@@ -3,7 +3,7 @@ import React, { ReactElement } from "react";
 const PromoHeader = (): ReactElement => {
   return (
     <>
-      <div className="container mb-5">
+      <div className="container">
         <div
           className="columns is-gapless is-10 has-text-centered is-centered is-mobile"
           style={{ marginTop: 20 }}
