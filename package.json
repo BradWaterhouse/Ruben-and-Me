@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "bulma": "^0.9",
+    "emailjs-com": "^2.6.4",
     "history": "^5.0",
     "netlify-cli": "^3.4.7",
     "react": "^17.0",

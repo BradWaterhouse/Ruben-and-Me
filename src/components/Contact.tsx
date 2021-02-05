@@ -1,13 +1,14 @@
 import * as React from "react";
 import { ReactElement, useState } from "react";
 import { Helmet } from "react-helmet";
+import emailjs from "emailjs-com";
 
 import { Button } from "./Button";
 import "./../assets/scss/App.scss";
 
 const renderSuccess: ReactElement = (
-  <div className="notification is-primary">
-    Thank you for your enquiry. I&apos;ll get back to you shortly!
+  <div className="notification is-primary has-text-centered is-light">
+    Thank you for your enquiry. We will get back to you shortly!
   </div>
 );
 
@@ -19,27 +20,22 @@ const Contact = (): ReactElement => {
   const handleSubmit = (event): void => {
     event.preventDefault();
     setLoading(true);
-    fetch("https://localhost", {
-      body: new URLSearchParams(new FormData(event.target) as URLSearchParams),
-      method: "POST",
-    })
-      .then((response: Response) => {
-        if (!response.ok) {
-          throw Error(response.statusText);
-        }
-        return response;
-      })
-      .then((response: Response) => response.json())
-      .then((json: string | boolean) => {
-        if (json === true) {
+
+    emailjs
+      .sendForm(
+        "service_n76czls",
+        "template_x4z7kwr",
+        event.target,
+        "user_ml6uPKjNjSrf3bbqGWHJJ"
+      )
+      .then(
+        (result) => {
           setSuccessful(true);
-        } else {
-          setError(json as string);
+        },
+        (error) => {
+          setError("Opps, something has gone wrong");
+          setLoading(false);
         }
-        setLoading(true);
-      })
-      .catch(() =>
-        setError("There was an error sending your email, please try again.")
       );
   };
 
@@ -56,6 +52,7 @@ const Contact = (): ReactElement => {
             type="text"
             placeholder="Name&hellip;"
             name="name"
+            required
             disabled={loading}
           />
         </div>
@@ -71,6 +68,7 @@ const Contact = (): ReactElement => {
             type="email"
             placeholder="Email address&hellip;"
             name="email"
+            required
             disabled={loading}
           />
         </div>
@@ -86,6 +84,7 @@ const Contact = (): ReactElement => {
             type="tel"
             placeholder="Telephone number&hellip;"
             name="phone"
+            required
             disabled={loading}
           />
         </div>
@@ -100,12 +99,13 @@ const Contact = (): ReactElement => {
             className="textarea"
             placeholder="Enquiry&hellip;"
             name="message"
+            required
             readOnly={loading}
           />
         </div>
       </div>
       {error === "" ? null : (
-        <div className="notification is-danger">{error}</div>
+        <div className="notification is-danger is-light">{error}</div>
       )}
       <div className="field">
         <div className="control ">

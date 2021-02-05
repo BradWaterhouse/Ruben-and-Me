@@ -13,7 +13,7 @@ const Categories = (): ReactElement => {
         <div className="column is-12">
           <div className="columns is-multiline is-mobile">
             <div className="column is-one-fifth-desktop is-12-mobile">
-              <div className="card">
+              <div className="card" style={{ paddingBottom: 8 }}>
                 <img
                   src="https://cdn.my1styears.com/media/wysiwyg/home/grid/ENewIn.jpg"
                   alt="Alps"
@@ -24,7 +24,7 @@ const Categories = (): ReactElement => {
               </div>
             </div>
             <div className="column is-one-fifth-desktop is-12-mobile">
-              <div className="card">
+              <div className="card" style={{ paddingBottom: 8 }}>
                 <img
                   src="https://cdn.my1styears.com/media/wysiwyg/home/grid/ESoftToys.jpg"
                   alt="Alps"
@@ -35,7 +35,7 @@ const Categories = (): ReactElement => {
               </div>
             </div>
             <div className="column is-one-fifth-desktop is-12-mobile">
-              <div className="card">
+              <div className="card" style={{ paddingBottom: 8 }}>
                 <img
                   src="https://cdn.my1styears.com/media/wysiwyg/home/grid/20_01_21_Homepage_Tile_Category_Block_Robes.jpg"
                   alt="Alps"
@@ -46,7 +46,7 @@ const Categories = (): ReactElement => {
               </div>
             </div>
             <div className="column is-one-fifth-desktop is-12-mobile">
-              <div className="card">
+              <div className="card" style={{ paddingBottom: 8 }}>
                 <img
                   src="https://cdn.my1styears.com/media/wysiwyg/home/grid/20_01_21_Homepage_Tile_Category_Block_GiftSets.jpg"
                   alt="Alps"
@@ -57,7 +57,7 @@ const Categories = (): ReactElement => {
               </div>
             </div>
             <div className="column is-one-fifth-desktop is-12-mobile">
-              <div className="card">
+              <div className="card" style={{ paddingBottom: 8 }}>
                 <img
                   src="https://cdn.my1styears.com/media/wysiwyg/home/grid/EBackpacks.jpg"
                   alt="Alps"
@@ -68,7 +68,7 @@ const Categories = (): ReactElement => {
               </div>
             </div>
             <div className="column is-one-fifth-desktop is-12-mobile">
-              <div className="card">
+              <div className="card" style={{ paddingBottom: 8 }}>
                 <img
                   src="https://cdn.my1styears.com/media/wysiwyg/home/grid/EBackpacks.jpg"
                   alt="Alps"
@@ -79,7 +79,7 @@ const Categories = (): ReactElement => {
               </div>
             </div>
             <div className="column is-one-fifth-desktop is-12-mobile">
-              <div className="card">
+              <div className="card" style={{ paddingBottom: 8 }}>
                 <img
                   src="https://cdn.my1styears.com/media/wysiwyg/home/grid/20_01_21_Homepage_Tile_Category_Block_Robes.jpg"
                   alt="Alps"
@@ -90,7 +90,7 @@ const Categories = (): ReactElement => {
               </div>
             </div>
             <div className="column is-one-fifth-desktop is-12-mobile">
-              <div className="card">
+              <div className="card" style={{ paddingBottom: 8 }}>
                 <img
                   src="https://cdn.my1styears.com/media/wysiwyg/home/grid/EWoodenToys.jpg"
                   alt="Alps"
@@ -101,7 +101,7 @@ const Categories = (): ReactElement => {
               </div>
             </div>
             <div className="column is-one-fifth-desktop is-12-mobile">
-              <div className="card">
+              <div className="card" style={{ paddingBottom: 8 }}>
                 <img
                   src="https://cdn.my1styears.com/media/wysiwyg/home/grid/EStorage.jpg"
                   alt="Alps"
@@ -112,7 +112,7 @@ const Categories = (): ReactElement => {
               </div>
             </div>
             <div className="column is-one-fifth-desktop is-12-mobile">
-              <div className="card">
+              <div className="card" style={{ paddingBottom: 8 }}>
                 <img
                   src="https://cdn.my1styears.com/media/wysiwyg/home/grid/ENewIn.jpg"
                   alt="Alps"

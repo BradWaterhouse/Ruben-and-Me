@@ -4,6 +4,7 @@ import GridProduct from "./GridProduct";
 //@ts-ignore
 import Products from "./../../products.json";
 import { useLocation } from "react-router-dom";
+import "./../assets/scss/category.scss";
 
 interface Product {
   id: number;
@@ -60,16 +61,21 @@ const Category = (): ReactElement => {
     }
   };
 
+  const formatCategoryName = (categoryName: string): string =>
+    categoryName.replace("-", " ");
+
   return (
     <>
       <Helmet>
-        <title>Ruben & Me | Category</title>
+        <title>Ruben & Me | {formatCategoryName(categoryName)}</title>
         <meta name="description" content="" />
       </Helmet>
 
       <main className="main-content">
         <div className="container mb-5">
-          <h2 className="title mt-2 has-text-centered">{categoryName + "."}</h2>
+          <h2 className="title mt-2 has-text-centered capitalize">
+            {formatCategoryName(categoryName) + "."}
+          </h2>
           <p className="has-text-centered">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the standard dummy text.
@@ -77,14 +83,14 @@ const Category = (): ReactElement => {
           <hr />
 
           <div className="columns is-multiline has-text-centered">
-            <div className="column is-2 is-offset-10-desktop is-right is-12-mobile">
-              <div
-                className="sort field is-pulled-right"
-                style={{ marginTop: 10 }}
-              >
-                <span>Sort by: </span>
-                <select aria-label="Sort by" onChange={handleDropdownChange}>
-                  <option value="weight">Bestsellers</option>
+            <div className="column is-1 is-offset-11-desktop is-right is-12-mobile is-offset-4-mobile">
+              <div className="sort field" style={{ marginTop: 10 }}>
+                <select
+                  aria-label="Sort by"
+                  className="select"
+                  onChange={handleDropdownChange}
+                >
+                  <option value="default">Sort By</option>
                   <option value="pricedesc">Price (Desc)</option>
                   <option value="priceasc">Price (Asc)</option>
                   <option value="nameasc">Name: A to Z</option>

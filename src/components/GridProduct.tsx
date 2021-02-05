@@ -6,12 +6,10 @@ interface Props {
   name: string;
 }
 
-interface State {}
-
 const GridProduct = (props: Props): ReactElement => {
   return (
     <div className="column is-one-quarter-desktop is-12-mobile">
-      <div className="card">
+      <div className="card" style={{ paddingBottom: 20 }}>
         <img src={props.image} alt="Alps" />
         <div className="w3-container w3-center">
           <h3>{props.name}</h3>
