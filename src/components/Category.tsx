@@ -83,7 +83,7 @@ const Category = (): ReactElement => {
           <hr />
 
           <div className="columns is-multiline has-text-centered">
-            <div className="column is-2-desktop is-offset-10-desktop is-right is-12-mobile">
+            <div className="column is-2-desktop is-offset-10-desktop is-right is-12-mobile mb-2">
               <div className="sort field" style={{ marginTop: 10 }}>
                 <select
                   aria-label="Sort by"

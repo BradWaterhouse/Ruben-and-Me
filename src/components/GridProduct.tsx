@@ -1,4 +1,5 @@
 import React, { ReactElement } from "react";
+import "./../assets/scss/category.scss";
 
 interface Props {
   image: string;
@@ -12,7 +13,7 @@ const GridProduct = (props: Props): ReactElement => {
       <div className="card" style={{ paddingBottom: 20 }}>
         <img src={props.image} alt="Alps" />
         <div className="w3-container w3-center">
-          <h3>{props.name}</h3>
+          <h3 className="product-name-text">{props.name}</h3>
           <b>£{props.price}</b>
           <br />
           <button
