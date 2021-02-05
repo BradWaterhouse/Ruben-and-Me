@@ -107,9 +107,9 @@ const Contact = (): ReactElement => {
       {error === "" ? null : (
         <div className="notification is-danger is-light">{error}</div>
       )}
-      <div className="field">
+      <div className="field pt-5">
         <div className="control ">
-          <Button text="SEND" disabled={loading} />
+          <Button text="Send" disabled={loading} />
         </div>
       </div>
     </form>
