@@ -99,18 +99,40 @@ const Category = (): ReactElement => {
               </div>
             </div>
 
-            <div className="column is-12">
-              <div className="columns is-multiline is-mobile">
-                {products.sort(getSorting).map((product: Product) => {
-                  return (
-                    <GridProduct
-                      key={product.id}
-                      image={product.image}
-                      price={product.price}
-                      name={product.name}
-                    />
-                  );
-                })}
+            <div className="column is-12 is-centered">
+              <div className="columns is-multiline is-mobile has-text-centered">
+                {products.length == 0 ? (
+                  <div
+                    className="column has-text-centered card is-10-mobile is-offset-1-mobile"
+                    style={{
+                      backgroundColor: "#f3f1f1",
+                      paddingTop: 30,
+                      paddingBottom: 30,
+                      marginTop: 20,
+                    }}
+                  >
+                    <div>
+                      <h3 className="title is-centered">
+                        Sorry, we don't have any products in this category yet.
+                      </h3>
+                      <h5>
+                        Please check our <a href="/">Facebook</a> or
+                        <a href="/"> Instagram </a>page for updates.
+                      </h5>
+                    </div>
+                  </div>
+                ) : (
+                  products.sort(getSorting).map((product: Product) => {
+                    return (
+                      <GridProduct
+                        key={product.id}
+                        image={product.image}
+                        price={product.price}
+                        name={product.name}
+                      />
+                    );
+                  })
+                )}
               </div>
             </div>
           </div>

@@ -12,7 +12,7 @@ const Categories = (): ReactElement => {
       <div className="columns is-multiline has-text-centered is-gapless">
         <div className="column is-12">
           <div className="columns is-multiline is-mobile">
-            <div className="column is-one-fifth-desktop is-12-mobile">
+            <div className="column is-one-fifth-desktop is-12-mobile is-4-tablet">
               <div className="card" style={{ paddingBottom: 8 }}>
                 <img
                   src="https://cdn.my1styears.com/media/wysiwyg/home/grid/ENewIn.jpg"
@@ -23,7 +23,7 @@ const Categories = (): ReactElement => {
                 </div>
               </div>
             </div>
-            <div className="column is-one-fifth-desktop is-12-mobile">
+            <div className="column is-one-fifth-desktop is-12-mobile is-4-tablet">
               <div className="card" style={{ paddingBottom: 8 }}>
                 <img
                   src="https://cdn.my1styears.com/media/wysiwyg/home/grid/ESoftToys.jpg"
@@ -34,7 +34,7 @@ const Categories = (): ReactElement => {
                 </div>
               </div>
             </div>
-            <div className="column is-one-fifth-desktop is-12-mobile">
+            <div className="column is-one-fifth-desktop is-12-mobile is-4-tablet">
               <div className="card" style={{ paddingBottom: 8 }}>
                 <img
                   src="https://cdn.my1styears.com/media/wysiwyg/home/grid/20_01_21_Homepage_Tile_Category_Block_Robes.jpg"
@@ -45,7 +45,7 @@ const Categories = (): ReactElement => {
                 </div>
               </div>
             </div>
-            <div className="column is-one-fifth-desktop is-12-mobile">
+            <div className="column is-one-fifth-desktop is-12-mobile is-4-tablet">
               <div className="card" style={{ paddingBottom: 8 }}>
                 <img
                   src="https://cdn.my1styears.com/media/wysiwyg/home/grid/20_01_21_Homepage_Tile_Category_Block_GiftSets.jpg"
@@ -56,7 +56,7 @@ const Categories = (): ReactElement => {
                 </div>
               </div>
             </div>
-            <div className="column is-one-fifth-desktop is-12-mobile">
+            <div className="column is-one-fifth-desktop is-12-mobile is-4-tablet">
               <div className="card" style={{ paddingBottom: 8 }}>
                 <img
                   src="https://cdn.my1styears.com/media/wysiwyg/home/grid/EBackpacks.jpg"
@@ -67,7 +67,7 @@ const Categories = (): ReactElement => {
                 </div>
               </div>
             </div>
-            <div className="column is-one-fifth-desktop is-12-mobile">
+            <div className="column is-one-fifth-desktop is-12-mobile is-4-tablet">
               <div className="card" style={{ paddingBottom: 8 }}>
                 <img
                   src="https://cdn.my1styears.com/media/wysiwyg/home/grid/EBackpacks.jpg"
@@ -78,7 +78,7 @@ const Categories = (): ReactElement => {
                 </div>
               </div>
             </div>
-            <div className="column is-one-fifth-desktop is-12-mobile">
+            <div className="column is-one-fifth-desktop is-12-mobile is-4-tablet">
               <div className="card" style={{ paddingBottom: 8 }}>
                 <img
                   src="https://cdn.my1styears.com/media/wysiwyg/home/grid/20_01_21_Homepage_Tile_Category_Block_Robes.jpg"
@@ -89,7 +89,7 @@ const Categories = (): ReactElement => {
                 </div>
               </div>
             </div>
-            <div className="column is-one-fifth-desktop is-12-mobile">
+            <div className="column is-one-fifth-desktop is-12-mobile is-4-tablet">
               <div className="card" style={{ paddingBottom: 8 }}>
                 <img
                   src="https://cdn.my1styears.com/media/wysiwyg/home/grid/EWoodenToys.jpg"
@@ -100,7 +100,7 @@ const Categories = (): ReactElement => {
                 </div>
               </div>
             </div>
-            <div className="column is-one-fifth-desktop is-12-mobile">
+            <div className="column is-one-fifth-desktop is-12-mobile is-4-tablet">
               <div className="card" style={{ paddingBottom: 8 }}>
                 <img
                   src="https://cdn.my1styears.com/media/wysiwyg/home/grid/EStorage.jpg"
@@ -111,7 +111,7 @@ const Categories = (): ReactElement => {
                 </div>
               </div>
             </div>
-            <div className="column is-one-fifth-desktop is-12-mobile">
+            <div className="column is-one-fifth-desktop is-12-mobile is-4-tablet">
               <div className="card" style={{ paddingBottom: 8 }}>
                 <img
                   src="https://cdn.my1styears.com/media/wysiwyg/home/grid/ENewIn.jpg"
