@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/elliotjreed/react-website-template.svg?branch=master)](https://travis-ci.org/elliotjreed/react-website-template) [![Coverage Status](https://coveralls.io/repos/github/elliotjreed/react-website-template/badge.svg?branch=master)](https://coveralls.io/github/elliotjreed/react-website-template?branch=master)
 
-# Ruben & Me
+# Reuben & Me
 
 ## Installing Yarn
 

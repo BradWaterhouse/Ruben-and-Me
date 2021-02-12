@@ -6,7 +6,7 @@
       "price": 27.00,
       "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/ESoftToys.jpg",
       "sortingOrder": 1,
-      "categories": ["wax-melts"]
+      "categories": ["wax-melts", "best-sellers"]
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "price": 23.00,
       "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/ESoftToys.jpg",
       "sortingOrder": 1,
-      "categories": ["wax-melts"]
+      "categories": ["wax-melts", "best-sellers"]
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "price": 22.00,
       "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/ESoftToys.jpg",
       "sortingOrder": 1,
-      "categories": ["wax-melts"]
+      "categories": ["wax-melts", "best-sellers"]
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "price": 22.00,
       "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/20_01_21_Homepage_Tile_Category_Block_Robes.jpg",
       "sortingOrder": 1,
-      "categories": ["clothing"]
+      "categories": ["clothing", "best-sellers"]
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "price": 21.00,
       "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/20_01_21_Homepage_Tile_Category_Block_Robes.jpg",
       "sortingOrder": 1,
-      "categories": ["clothing"]
+      "categories": ["clothing", "best-sellers"]
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "price": 22.00,
       "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/EBackpacks.jpg",
       "sortingOrder": 1,
-      "categories": ["accessories"]
+      "categories": ["accessories", "best-sellers"]
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@
       "price": 21.00,
       "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/EBackpacks.jpg",
       "sortingOrder": 1,
-      "categories": ["accessories"]
+      "categories": ["accessories", "best-sellers"]
     },
     {
       "id": 9,
@@ -70,7 +70,7 @@
       "price": 22.00,
       "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/EBackpacks.jpg",
       "sortingOrder": 1,
-      "categories": ["accessories"]
+      "categories": ["accessories", "best-sellers"]
     }
   ]
 }

@@ -126,7 +126,7 @@ const Contact = (): ReactElement => {
         <div className="container">
           <div className="columns is-multiline">
             <div className="column is-12 has-text-centered">
-              <h2 className="title">Get in Touch</h2>
+              <h2 className="title" style={{ fontWeight: "lighter" }}>Get in Touch</h2>
               <p>For enquiries, please use the form below.</p>
             </div>
             <div className="column is-8 is-offset-2">

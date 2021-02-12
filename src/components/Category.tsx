@@ -76,13 +76,13 @@ const Category = (): ReactElement => {
   return (
     <>
       <Helmet>
-        <title>Ruben & Me | {formatCategoryName(categoryName)}</title>
+        <title>Reuben & Me | {formatCategoryName(categoryName)}</title>
         <meta name="description" content="" />
       </Helmet>
 
       <main className="main-content">
         <div className="container mb-5">
-          <h2 className="title mt-2 has-text-centered capitalize">
+          <h2 className="title mt-2 has-text-centered capitalize" style={{ fontWeight: "lighter" }}>
             {formatCategoryName(categoryName) + "."}
           </h2>
           <p className="has-text-centered">{getCategoryDescription()}</p>

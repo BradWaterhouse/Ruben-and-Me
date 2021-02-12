@@ -8,7 +8,7 @@ const GiftFinder = (): ReactElement => {
   return (
     <>
       <div className="gift-finder">
-        <h2 className="title has-text-centered">
+        <h2 className="title has-text-centered" style={{ fontWeight: "lighter" }}>
           Find the perfect gift for...
         </h2>
         <div className="columns is-multiline has-text-centered">

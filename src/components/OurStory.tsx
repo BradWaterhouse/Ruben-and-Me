@@ -7,7 +7,7 @@ interface State {}
 const OurStory = (): ReactElement => {
   return (
     <>
-      <h3 className="title mt-2 has-text-centered">Our Story.</h3>
+      <h3 className="title mt-2 has-text-centered" style={{ fontWeight: "lighter" }}>Our Story.</h3>
       <p className="has-text-centered">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry standard dummy text ever

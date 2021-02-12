@@ -5,14 +5,14 @@ import { Helmet } from "react-helmet";
 import "./../assets/scss/App.scss";
 import "./../assets/scss/home.scss";
 import GiftFinder from "./GiftFinder";
-import Categories from "./Categories";
 import OurStory from "./OurStory";
+import Categories from "./Categories";
 
 const Home = (): ReactElement => {
   return (
     <>
       <Helmet>
-        <title>Ruben & Me | Home</title>
+        <title>Reuben & Me | Home</title>
         <meta name="description" content="" />
       </Helmet>
 
@@ -20,7 +20,7 @@ const Home = (): ReactElement => {
         <div className="top-padding">
           <div className="columns is-gapless is-multiline has-text-centered is-centered">
             <div className="column is-3">
-              <h2 className="title">Reuben & Me.</h2>
+              <h2 className="title" style={{ fontWeight: "lighter" }}>Reuben & Me.</h2>
               <h3 className="subtitle">personalisation done personally.</h3>
             </div>
           </div>
@@ -33,6 +33,11 @@ const Home = (): ReactElement => {
           <Categories />
           <hr />
           <OurStory />
+          <hr />
+
+          <h3 className="title mt-2 has-text-centered" style={{ fontWeight: "lighter" }}>Socials.</h3>
+          <div className="elfsight-app-67841bb5-a9f7-476d-9a00-6235449c86a4" />
+
           <hr />
         </div>
       </main>
