@@ -9,7 +9,7 @@ const Sitemap = (): ReactElement => {
   return (
     <>
       <Helmet>
-        <title>Sitemap | TITLE</title>
+        <title>Sitemap | Reuben & Me</title>
         <meta name="description" content="Sitemap" />
       </Helmet>
 
