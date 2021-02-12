@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet";
 import GridProduct from "./GridProduct";
 //@ts-ignore
 import Products from "./../../products.json";
+//@ts-ignore
+import Categories from "./../../category.json";
 import { useLocation } from "react-router-dom";
 import "./../assets/scss/category.scss";
 
@@ -42,6 +44,13 @@ const Category = (): ReactElement => {
     });
   };
 
+  const getCategoryDescription = (): string => {
+    if (Categories[categoryName] == undefined) {
+      return "default category description";
+    }
+    return Categories[categoryName];
+  };
+
   const handleDropdownChange = (event: ChangeEvent): void => {
     setSortingOrder((event.target as HTMLSelectElement).value);
   };
@@ -76,10 +85,7 @@ const Category = (): ReactElement => {
           <h2 className="title mt-2 has-text-centered capitalize">
             {formatCategoryName(categoryName) + "."}
           </h2>
-          <p className="has-text-centered">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the standard dummy text.
-          </p>
+          <p className="has-text-centered">{getCategoryDescription()}</p>
           <hr />
 
           <div className="columns is-multiline has-text-centered">
@@ -112,9 +118,9 @@ const Category = (): ReactElement => {
                     }}
                   >
                     <div>
-                      <h3 className="title is-centered">
+                      <h4 className="subtitle is-centered">
                         Sorry, we don't have any products in this category yet.
-                      </h3>
+                      </h4>
                       <h5>
                         Please check our <a href="/">Facebook</a> or
                         <a href="/"> Instagram </a>page for updates.
