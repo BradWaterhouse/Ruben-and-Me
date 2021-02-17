@@ -5,8 +5,7 @@ import { Spinner } from "./Spinner";
 import { TopBar } from "./TopBar";
 import "./../assets/scss/App.scss";
 import { Footer } from "./Footer";
-import PromoHeader
-  from "./PromoHeader";
+import PromoHeader from "./PromoHeader";
 
 const Home = React.lazy(
   (): Promise<any> => import(/* webpackChunkName: "home" */ "./Home")
@@ -17,6 +16,11 @@ const Contact = React.lazy(
 
 const Category = React.lazy(
   (): Promise<any> => import(/* webpackChunkName: "contact" */ "./Category")
+);
+
+const ShopifyCollection = React.lazy(
+  (): Promise<any> =>
+    import(/* webpackChunkName: "shopifyCollection" */ "./ShopifyCollection")
 );
 
 const Sitemap = React.lazy(
@@ -37,6 +41,11 @@ const Routes = (): Router => {
           <Route exact={true} path="/" component={Home} />
           <Route exact={true} path="/contact" component={Contact} />
           <Route exact={true} path="/category/*" component={Category} />
+          <Route
+            exact={true}
+            path="/shopify-test/"
+            component={ShopifyCollection}
+          />
           <Route exact={true} path="/sitemap" component={Sitemap} />
           <Route component={PageNotFound} />
         </Switch>
