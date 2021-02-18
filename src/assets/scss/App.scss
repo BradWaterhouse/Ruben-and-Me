@@ -47,9 +47,8 @@
           color: $grey-darker;
 
           :hover {
-            color: $blue;
+            color: gray;
             transition: all 0.2s ease-in-out;
-            border-bottom: 2px solid $black-ter;
           }
         }
 

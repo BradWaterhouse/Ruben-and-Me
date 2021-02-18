@@ -1,5 +1,19 @@
-{
-  "wax-melts": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-  "accessories": "survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more",
-  "clothing": "making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy."
-}
+ {
+      "all": [
+        {
+          "id": 239713616026,
+          "name": "accessories",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+          "id": 239574057114,
+          "name": "best-sellers",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s best sellers."
+        },
+        {
+          "id": 239574057114,
+          "name": "Category not found",
+          "description": "We can't find any available products in this category, here's a list of our best sellers instead."
+        }
+      ]
+    }

@@ -45,25 +45,16 @@ export const TopBar = (): ReactElement => {
                 </div>
                 <div className="navbar-item">
                   <Link
-                    to="/category/new-in"
+                    to="/collection/best-sellers"
                     className="navbar-item"
                     onClick={(): void => toggleMenu(false)}
                   >
-                    New In
+                    Best Sellers
                   </Link>
                 </div>
                 <div className="navbar-item">
                   <Link
-                    to="/category/clothing"
-                    className="navbar-item"
-                    onClick={(): void => toggleMenu(false)}
-                  >
-                    Clothing
-                  </Link>
-                </div>
-                <div className="navbar-item">
-                  <Link
-                    to="/category/accessories"
+                    to="/collection/accessories"
                     className="navbar-item"
                     onClick={(): void => toggleMenu(false)}
                   >
@@ -72,11 +63,20 @@ export const TopBar = (): ReactElement => {
                 </div>
                 <div className="navbar-item">
                   <Link
-                    to="/category/wax-melts"
+                    to="/collection/pyjamas"
                     className="navbar-item"
                     onClick={(): void => toggleMenu(false)}
                   >
-                    Wax Melts
+                    Pyjamas
+                  </Link>
+                </div>
+                <div className="navbar-item">
+                  <Link
+                    to="/collection/coats-&-hoodies"
+                    className="navbar-item"
+                    onClick={(): void => toggleMenu(false)}
+                  >
+                    Coats & Hoodies
                   </Link>
                 </div>
                 <div className="navbar-item">
@@ -98,31 +98,37 @@ export const TopBar = (): ReactElement => {
               <div className="column is-12 hero-menu-desktop has-text-centered">
                 <ul>
                   <li>
-                    <h4 className="subtitle">Reuben & Me.</h4>
+                    <a href="/">
+                      <h4 className="subtitle">Reuben & Me.</h4>
+                    </a>
                   </li>
                   <li>
                     <h4>
-                      <Link to="/">Home</Link>
+                      <Link to="/collection/best-sellers">Best Sellers</Link>
                     </h4>
                   </li>
                   <li>
                     <h4>
-                      <Link to="/category/new-in">New In</Link>
+                      <Link to="/collection/accessories">Accessories</Link>
                     </h4>
                   </li>
                   <li>
                     <h4>
-                      <Link to="/category/clothing">Clothing</Link>
+                      <Link to="/collection/pyjamas">Pyjamas</Link>
                     </h4>
                   </li>
                   <li>
                     <h4>
-                      <Link to="/category/accessories">Accessories</Link>
+                      <Link to="/collection/coats-&-hoodies">
+                        Hoodies
+                      </Link>
                     </h4>
                   </li>
                   <li>
                     <h4>
-                      <Link to="/category/wax-melts">Wax Melts</Link>
+                      <Link to="/collection/matching-sets">
+                        Matching Sets
+                      </Link>
                     </h4>
                   </li>
                   <li className="is-grouped-right">
