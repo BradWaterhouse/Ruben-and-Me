@@ -2,7 +2,7 @@ import React, { ReactElement, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 //@ts-ignore
 import Categories from "./../../category.json";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "./../assets/scss/category.scss";
 
 interface Category {
@@ -12,8 +12,7 @@ interface Category {
 }
 
 const ShopifyCollection = (): ReactElement => {
-  const location = useLocation();
-  const [categoryName, setCategoryName] = useState<string>("");
+  const { collectionName } = useParams();
   const [collectionId, setCollectionId] = useState<number>(0);
   const [categoryDescription, setCategoryDescription] = useState<string>(
     "default category description"
@@ -29,67 +28,181 @@ const ShopifyCollection = (): ReactElement => {
   const ui = ShopifyBuy.UI.init(client);
 
   useEffect(() => {
-    console.log("use effect called");
-    getURL();
     getCategoryInformation();
-
-    document.getElementById("products").innerHTML = "";
-
-    ui.createComponent("collection", {
-      id: collectionId,
-      node: document.getElementById("products"),
-      options: {
-        product: {
-          buttonDestination: "modal",
-          contents: {
-            description: true,
-          },
-          styles: {
-            button: {
-              "background-color": "grey",
-            },
-          },
-        },
-        cart: {
-          styles: {
-            button: {
-              "background-color": "grey",
-            },
-          },
-        },
-      },
-    });
-  }, [categoryName, []]);
+  }, [collectionName]);
 
   useEffect(() => {
-    return () => {
-      console.log("dismount called");
-      document.getElementById("products").innerHTML = "";
-      document.getElementById("products").className = "";
-    };
-  }, [location]);
-
-  const getURL = (): void => {
-    const fullUrl = location.pathname;
-    setCategoryName(fullUrl.substring(fullUrl.lastIndexOf("/") + 1));
-  };
+    createCollection();
+  }, [collectionId]);
 
   const getCategoryInformation = (): void => {
-    const newCategories = Object.assign([], Categories.all);
-
-    const index = newCategories.findIndex(
-      (selectedCategory: Category) => selectedCategory.name === categoryName
+    const index = Categories.all.findIndex(
+      (selectedCategory: Category) => selectedCategory.name === collectionName
     );
 
     if (index >= 0) {
       setCategoryDescription(Categories.all[index].description);
       setCollectionId(Categories.all[index].id);
     } else {
-      setCollectionId(239574057114);
+      setCollectionId(240046538906);
       setCategoryDescription(
         "We can't find any available products in this category, here's a list of our best sellers instead."
       );
     }
+  };
+
+  const createCollection = () => {
+    document.getElementById("products").innerHTML = "";
+    ui.createComponent("collection", {
+      id: collectionId,
+      node: document.getElementById("products"),
+      moneyFormat: "%C2%A3%7B%7Bamount%7D%7D",
+
+      options: {
+        product: {
+          styles: {
+            product: {
+              "@media (min-width: 601px)": {
+                "max-width": "calc(25% - 20px)",
+                "margin-left": "20px",
+                "margin-bottom": "50px",
+                width: "calc(25% - 20px)",
+              },
+              img: {
+                height: "calc(100% - 15px)",
+                position: "absolute",
+                left: "0",
+                right: "0",
+                top: "0",
+              },
+              imgWrapper: {
+                "padding-top": "calc(75% + 15px)",
+                position: "relative",
+                height: "0",
+              },
+            },
+            button: {
+              "font-family": "PT Sans, sans-serif",
+              "font-size": "16px",
+              "padding-top": "16px",
+              "padding-bottom": "16px",
+              ":hover": {
+                "background-color": "#dccd54",
+              },
+              "background-color": "#f4e45d",
+              ":focus": {
+                "background-color": "#dccd54",
+              },
+              "border-radius": "4px",
+            },
+            quantityInput: {
+              "font-size": "16px",
+              "padding-top": "16px",
+              "padding-bottom": "16px",
+            },
+          },
+          buttonDestination: "modal",
+          contents: {
+            options: false,
+          },
+          text: {
+            button: "View product",
+          },
+          googleFonts: ["PT Sans"],
+        },
+        productSet: {
+          styles: {
+            products: {
+              "@media (min-width: 601px)": {
+                "margin-left": "-20px",
+              },
+            },
+          },
+        },
+        modalProduct: {
+          contents: {
+            img: false,
+            imgWithCarousel: true,
+            button: false,
+            buttonWithQuantity: true,
+          },
+          styles: {
+            product: {
+              "@media (min-width: 601px)": {
+                "max-width": "100%",
+                "margin-left": "0px",
+                "margin-bottom": "0px",
+              },
+            },
+            button: {
+              "font-family": "PT Sans, sans-serif",
+              "font-size": "16px",
+              "padding-top": "16px",
+              "padding-bottom": "16px",
+              ":hover": {
+                "background-color": "#dccd54",
+              },
+              "background-color": "#f4e45d",
+              ":focus": {
+                "background-color": "#dccd54",
+              },
+              "border-radius": "4px",
+            },
+            quantityInput: {
+              "font-size": "16px",
+              "padding-top": "16px",
+              "padding-bottom": "16px",
+            },
+          },
+          googleFonts: ["PT Sans"],
+          text: {
+            button: "Add to cart",
+          },
+        },
+        option: {},
+        cart: {
+          styles: {
+            button: {
+              "font-family": "PT Sans, sans-serif",
+              "font-size": "16px",
+              "padding-top": "16px",
+              "padding-bottom": "16px",
+              ":hover": {
+                "background-color": "#dccd54",
+              },
+              "background-color": "#f4e45d",
+              ":focus": {
+                "background-color": "#dccd54",
+              },
+              "border-radius": "4px",
+            },
+          },
+          text: {
+            total: "Subtotal",
+            button: "Checkout",
+          },
+          googleFonts: ["PT Sans"],
+        },
+        toggle: {
+          styles: {
+            toggle: {
+              "font-family": "PT Sans, sans-serif",
+              "background-color": "#f4e45d",
+              ":hover": {
+                "background-color": "#dccd54",
+              },
+              ":focus": {
+                "background-color": "#dccd54",
+              },
+            },
+            count: {
+              "font-size": "16px",
+            },
+          },
+          googleFonts: ["PT Sans"],
+        },
+      },
+    });
   };
 
   const formatCategoryName = (categoryName: string): string =>
@@ -98,7 +211,7 @@ const ShopifyCollection = (): ReactElement => {
   return (
     <>
       <Helmet>
-        <title>Reuben & Me | {formatCategoryName(categoryName)}</title>
+        <title>Reuben & Me | {formatCategoryName(collectionName)}</title>
         <meta name="description" content="" />
       </Helmet>
 
@@ -108,7 +221,7 @@ const ShopifyCollection = (): ReactElement => {
             className="title mt-2 has-text-centered capitalize"
             style={{ fontWeight: "lighter" }}
           >
-            {formatCategoryName(categoryName) + "."}
+            {formatCategoryName(collectionName) + "."}
           </h2>
           <p className="has-text-centered">{categoryDescription}</p>
           <hr />

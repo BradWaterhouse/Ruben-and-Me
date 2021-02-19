@@ -44,39 +44,8 @@ const Routes = (): Router => {
           <Route exact={true} path="/category/" component={Category} />
 
           <Route
-            exact={true}
-            path="/collection/best-sellers"
             component={ShopifyCollection}
-          />
-
-          <Route
-            exact={true}
-            path="/collection/accessories"
-            component={ShopifyCollection}
-          />
-
-          <Route
-            exact={true}
-            path="/collection/pyjamas"
-            component={ShopifyCollection}
-          />
-
-          <Route
-            exact={true}
-            path="/collection/coats-&-hoodies"
-            component={ShopifyCollection}
-          />
-
-          <Route
-            exact={true}
-            path="/collection/romper-suits"
-            component={ShopifyCollection}
-          />
-
-          <Route
-            exact={true}
-            path="/collection/matching-sets"
-            component={ShopifyCollection}
+            path="/collection/:collectionName/"
           />
 
           <Route exact={true} path="/sitemap" component={Sitemap} />
