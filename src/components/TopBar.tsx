@@ -72,15 +72,6 @@ export const TopBar = (): ReactElement => {
                 </div>
                 <div className="navbar-item">
                   <Link
-                    to="/category/wax-melts"
-                    className="navbar-item"
-                    onClick={(): void => toggleMenu(false)}
-                  >
-                    Wax Melts
-                  </Link>
-                </div>
-                <div className="navbar-item">
-                  <Link
                     to="/contact"
                     className="navbar-item"
                     onClick={(): void => toggleMenu(false)}
@@ -118,11 +109,6 @@ export const TopBar = (): ReactElement => {
                   <li>
                     <h4>
                       <Link to="/category/accessories">Accessories</Link>
-                    </h4>
-                  </li>
-                  <li>
-                    <h4>
-                      <Link to="/category/wax-melts">Wax Melts</Link>
                     </h4>
                   </li>
                   <li className="is-grouped-right">

@@ -2,75 +2,30 @@
   "all": [
     {
       "id": 1,
-      "name": "a wax melt product",
-      "price": 27.00,
-      "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/ESoftToys.jpg",
+      "name": "Personalised Short Tracksuit",
+      "price": 23.99,
+      "image": "https://i.ibb.co/Xp3dfRR/Screenshot-2021-03-19-at-14-51-32.png",
+      "link": "https://www.etsy.com/uk/listing/984121053/personalised-short-tracksuit?ref=shop_home_active_1",
       "sortingOrder": 1,
-      "categories": ["wax-melts", "best-sellers"]
+      "categories": ["best-sellers", "new-in", "clothing"]
     },
     {
       "id": 2,
-      "name": "b wax melt product",
-      "price": 23.00,
-      "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/ESoftToys.jpg",
+      "name": "Personalised Summer Set",
+      "price": 14.99,
+      "image": "https://i.ibb.co/tYfz9C2/Screenshot-2021-03-19-at-14-39-05.png",
+      "link": "https://www.etsy.com/uk/listing/982191983/personalised-summer-set?ref=shop_home_active_2",
       "sortingOrder": 1,
-      "categories": ["wax-melts", "best-sellers"]
+      "categories": ["best-sellers", "new-in", "clothing"]
     },
     {
       "id": 3,
-      "name": "c wax melt product",
-      "price": 22.00,
-      "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/ESoftToys.jpg",
+      "name": "Personalised Lounge wear",
+      "price": 18.99,
+      "image": "https://i.ibb.co/sJTSBqK/Screenshot-2021-03-19-at-14-39-47.png",
+      "link": "https://www.etsy.com/uk/listing/970592521/personalised-babytoddler-loungewear?ref=shop_home_active_3",
       "sortingOrder": 1,
-      "categories": ["wax-melts", "best-sellers"]
-    },
-    {
-      "id": 4,
-      "name": "d wax melt product",
-      "price": 21.00,
-      "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/ESoftToys.jpg",
-      "sortingOrder": 1,
-      "categories": ["wax-melts"]
-    },
-    {
-      "id": 5,
-      "name": "product 5",
-      "price": 22.00,
-      "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/20_01_21_Homepage_Tile_Category_Block_Robes.jpg",
-      "sortingOrder": 1,
-      "categories": ["clothing", "best-sellers"]
-    },
-    {
-      "id": 6,
-      "name": "product 6",
-      "price": 21.00,
-      "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/20_01_21_Homepage_Tile_Category_Block_Robes.jpg",
-      "sortingOrder": 1,
-      "categories": ["clothing", "best-sellers"]
-    },
-    {
-      "id": 7,
-      "name": "product 5",
-      "price": 22.00,
-      "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/EBackpacks.jpg",
-      "sortingOrder": 1,
-      "categories": ["accessories", "best-sellers"]
-    },
-    {
-      "id": 8,
-      "name": "product 6",
-      "price": 21.00,
-      "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/EBackpacks.jpg",
-      "sortingOrder": 1,
-      "categories": ["accessories", "best-sellers"]
-    },
-    {
-      "id": 9,
-      "name": "product 5",
-      "price": 22.00,
-      "image": "https://cdn.my1styears.com/media/wysiwyg/home/grid/EBackpacks.jpg",
-      "sortingOrder": 1,
-      "categories": ["accessories", "best-sellers"]
+      "categories": ["best-sellers", "new-in", "clothing"]
     }
   ]
 }
