@@ -9,6 +9,7 @@ interface Product {
   price: number;
   image: string;
   sortingOrder: number;
+  link: string;
   categories: Array<string>;
 }
 
@@ -46,6 +47,7 @@ const Categories = (): ReactElement => {
               image={product.image}
               price={product.price}
               name={product.name}
+              link={product.link}
             />
           );
         })}
